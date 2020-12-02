@@ -1,19 +1,5 @@
 #!/usr/bin/env python3
-""" AOC day 1 """
-TOT=2020
-
-def check(a,b):
-    # if the numbers are too big, return
-    if min(a) > TOT/2 and min(b) > TOT/2:
-        return None
-    for num in a:
-        MAX=TOT-num
-        for num2 in b:
-            if num2 > MAX:
-                break
-            if num + num2 == TOT:
-                print(f'RES: {num*num2}')
-                return[num,num2]
+""" AOC day 2 """
 
 import re
 tot = 0
